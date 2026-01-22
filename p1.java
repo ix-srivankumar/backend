@@ -1,13 +1,10 @@
 import java.util.Scanner;
 public class p1 {
-
-    int num=7;
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         
         System.out.print("Enter a number : ");
-
-        int num=6;
+        int num= sc.nextInt();
 
         if (num<0) System.out.println("Negative");
         else if (num==0) System.out.println("Zero");
