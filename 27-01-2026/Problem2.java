@@ -48,9 +48,7 @@ public class Problem2 {
             frequencyMap.put(employee, frequencyMap.getOrDefault(employee, 0) + 1);
         }
         
-        for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
-            System.out.println("   " + entry.getKey() + " : " + entry.getValue());
-        }
+        System.out.println(frequencyMap);
         return frequencyMap;
     }
     
@@ -59,58 +57,15 @@ public class Problem2 {
             HashMap<String, Integer> frequencyMap,
             ArrayList<String> list) {
         int count = 1;
-        for (String employee : uniqueSet) {
-            System.out.println("   " + count + ". " + employee);
-            count++;
-        }
-        Iterator<String> setIterator = uniqueSet.iterator();
-        count = 1;
-        while (setIterator.hasNext()) {
-            System.out.println("   " + count + ". " + setIterator.next());
-            count++;
-        }
-        
-        // Technique 3: Stream API with forEach
-        count = 1;
         for (String employee : list) {
             System.out.println("   " + count + ". " + employee);
             count++;
         }
-        
-        // Technique 4: Iterator on ArrayList
-        System.out.println("\nTechnique 4: Iterator on ArrayList");
-        System.out.println("All Employees (using Iterator):");
         Iterator<String> listIterator = list.iterator();
         count = 1;
         while (listIterator.hasNext()) {
             System.out.println("   " + count + ". " + listIterator.next());
             count++;
-        }
-        
-        // Technique 5: EntrySet iteration on HashMap
-        for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
-            System.out.println("   " + entry.getKey() + " -> " + entry.getValue() + " occurrence(s)");
-        }
-        
-        // Technique 6: Iterator on HashMap entrySet
-        Iterator<Map.Entry<String, Integer>> mapIterator = frequencyMap.entrySet().iterator();
-        while (mapIterator.hasNext()) {
-            Map.Entry<String, Integer> entry = mapIterator.next();
-            System.out.println("   " + entry.getKey() + " -> " + entry.getValue());
-        }
-        
-        // Technique 7: values() iteration
-        int index = 1;
-        for (Integer frequency : frequencyMap.values()) {
-            System.out.println("   Frequency " + index + ": " + frequency);
-            index++;
-        }
-        
-        // Technique 8: keySet() iteration
-        index = 1;
-        for (String name : frequencyMap.keySet()) {
-            System.out.println("   " + index + ". " + name);
-            index++;
         }
     }
 }
