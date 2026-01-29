@@ -1,0 +1,64 @@
+Jan 29, 2026 11:44:11 AM Problem5 main
+INFO: === Student Data Processing Started ===
+Jan 29, 2026 11:44:11 AM Problem5 readAndProcessFile
+INFO: Starting to read file: students.txt
+Jan 29, 2026 11:44:11 AM Problem5 readAndProcessFile
+INFO: File reading completed. Total lines processed: 0
+Jan 29, 2026 11:44:11 AM Problem5 writeValidRecords
+INFO: Writing valid records to: valid.txt
+Jan 29, 2026 11:44:11 AM Problem5 writeValidRecords
+INFO: Successfully wrote 0 valid records to valid.txt
+Jan 29, 2026 11:44:11 AM Problem5 writeInvalidRecords
+INFO: Writing invalid records to: invalid.txt
+Jan 29, 2026 11:44:11 AM Problem5 writeInvalidRecords
+INFO: Successfully wrote 0 invalid records to invalid.txt
+Jan 29, 2026 11:44:11 AM Problem5 main
+INFO: === Student Data Processing Completed ===
+Jan 29, 2026 11:44:58 AM Problem5 main
+INFO: === Student Data Processing Started ===
+Jan 29, 2026 11:44:58 AM Problem5 readAndProcessFile
+INFO: Starting to read file: students.txt
+Jan 29, 2026 11:44:58 AM Problem5 readAndProcessFile
+INFO: File reading completed. Total lines processed: 0
+Jan 29, 2026 11:44:58 AM Problem5 writeValidRecords
+INFO: Writing valid records to: valid.txt
+Jan 29, 2026 11:44:58 AM Problem5 writeValidRecords
+INFO: Successfully wrote 0 valid records to valid.txt
+Jan 29, 2026 11:44:59 AM Problem5 writeInvalidRecords
+INFO: Writing invalid records to: invalid.txt
+Jan 29, 2026 11:44:59 AM Problem5 writeInvalidRecords
+INFO: Successfully wrote 0 invalid records to invalid.txt
+Jan 29, 2026 11:44:59 AM Problem5 main
+INFO: === Student Data Processing Completed ===
+Jan 29, 2026 11:45:29 AM Problem5 main
+INFO: === Student Data Processing Started ===
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: Starting to read file: students.txt
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: Processing line 1: 1,srivan,22
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: ✓ Student added: srivan
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: Processing line 2: 2,sathwik,23
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: ✓ Student added: sathwik
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: Processing line 3: 3,sushant,21
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: ✓ Student added: sushant
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: Processing line 4: 4,sathwik,20
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: ✓ Student added: sathwik
+Jan 29, 2026 11:45:29 AM Problem5 readAndProcessFile
+INFO: File reading completed. Total lines processed: 4
+Jan 29, 2026 11:45:29 AM Problem5 writeValidRecords
+INFO: Writing valid records to: valid.txt
+Jan 29, 2026 11:45:29 AM Problem5 writeValidRecords
+INFO: Successfully wrote 4 valid records to valid.txt
+Jan 29, 2026 11:45:29 AM Problem5 writeInvalidRecords
+INFO: Writing invalid records to: invalid.txt
+Jan 29, 2026 11:45:29 AM Problem5 writeInvalidRecords
+INFO: Successfully wrote 0 invalid records to invalid.txt
+Jan 29, 2026 11:45:29 AM Problem5 main
+INFO: === Student Data Processing Completed ===
