@@ -78,9 +78,7 @@ public class Problem3 {
             throw new InvalidAgeException("Age must be between 18 and 60");
         }
 
-        if (!email.matches("^(!?.*\\..\\.)[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")
-        || email.contains("..")
-        || email.contains("@@")) {
+        if (!email.matches("^(!?.*\\..\\.)[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")) {
             throw new InvalidEmailException("Invalid email format");
 }
 

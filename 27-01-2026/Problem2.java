@@ -16,8 +16,7 @@ public class Problem2 {
 
         displayDataWithIterationTechniques(uniqueEmployees, frequencyMap, employeeList);
     }
-    
-    // Step 1: Convert array to ArrayList
+
     private static ArrayList<String> convertArrayToArrayList(String[] array) {
         ArrayList<String> list = new ArrayList<>(Arrays.asList(array));
         System.out.println("Original array size: " + array.length);
@@ -28,7 +27,6 @@ public class Problem2 {
         return list;
     }
     
-    // Step 2: Remove duplicates using HashSet
     private static HashSet<String> removeDuplicates(ArrayList<String> list) {
         HashSet<String> uniqueSet = new HashSet<>(list);
         System.out.println("Duplicates removed: " + (list.size() - uniqueSet.size()));
@@ -51,7 +49,7 @@ public class Problem2 {
         System.out.println(frequencyMap);
         return frequencyMap;
     }
-    
+
     private static void displayDataWithIterationTechniques(
             HashSet<String> uniqueSet,
             HashMap<String, Integer> frequencyMap,
