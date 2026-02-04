@@ -1,27 +1,35 @@
-create databasee college_db;
-use college_db;
+CREATE DATABASE college_db;
 
 
-create table students (
-    student_id numeric primary key,
-    name text,
-    email text ,
-    age text,
-    join_date date,
-    active_flag bit default 1
+USE college_db;
+
+
+CREATE TABLE STUDENTS (
+    student_id BIGINT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(150) UNIQUE,
+    age INT,
+    join_date DATE,
+    active_flag BIT DEFAULT 1
 );
+GO
 
-create table courses (
-    course_id numeric primary key,
-    course_name text not null,
-    fees decimal(10,2)
-);
 
-create table enrollments (
-    enroll_id numeric primary key,
-    student_id numeric,
-    course_id numeric,
-    enroll_timestamp timestamp,
-    foreign key (student_id) references students(student_id),
-    foreign key (course_id) references courses(course_id)
+CREATE TABLE COURSES (
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(100) NOT NULL,
+    fees DECIMAL(10,2)
 );
+GO
+
+CREATE TABLE ENROLLMENTS (
+    enroll_id BIGINT PRIMARY KEY,
+    student_id BIGINT,
+    course_id INT,
+    enroll_timestamp DATETIME2,
+    CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES STUDENTS(student_id),
+    CONSTRAINT fk_course FOREIGN KEY (course_id) REFERENCES COURSES(course_id)
+);
+GO
+
+
