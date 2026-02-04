@@ -1,0 +1,27 @@
+USE college_db;
+GO
+
+SELECT *
+FROM STUDENTS
+WHERE age > 20
+ORDER BY age;
+
+SELECT COUNT(*) AS count_students
+FROM STUDENTS
+WHERE name LIKE '%a%';
+
+SELECT *
+FROM COURSES
+WHERE fees BETWEEN 50000 AND 200000
+ORDER BY fees;
+
+SELECT *
+FROM STUDENTS
+WHERE active_flag = 0
+  AND age IS NOT NULL;
+
+SELECT course_id, COUNT(*) AS enroll_count
+FROM ENROLLMENTS
+GROUP BY course_id
+HAVING COUNT(*) > 1;
+GO
