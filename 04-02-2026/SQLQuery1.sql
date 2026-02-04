@@ -1,4 +1,4 @@
-
+create databasee college_db;
 use college_db;
 
 
